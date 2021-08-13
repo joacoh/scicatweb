@@ -5,4 +5,4 @@ En esta rama estará todo lo que sea testeo del proyecto **COMPLETO**, con HTML,
 
 Para poder realizar una prueba se debe tener instalado **DJANGO** y luego ejecutar desde la carpeta del proyecto el comando:
 
-    python3 master.py runserver
+    python3 manage.py runserver
