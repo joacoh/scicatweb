@@ -6,7 +6,7 @@ def home(request):
     return render(request, 'app/home.html')
 
 def contacto(request):
-    return render(request, 'app/contacto.html')
+    return render(request, 'app/d_contacto.html')
     
 def ramos(request):
-    return render(request, 'app/ramos.html')
+    return render(request, 'app/d_ramos.html')

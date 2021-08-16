@@ -1,118 +1,86 @@
-{% extends 'app/base.html' %}
 {% load static %}
 
-{% block js %} 
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <link rel="icon" type="Icono.ico" href="{% static 'app/img/Icono.ico' %}" size="32x32">
+    <meta charset="UTF-8">
 
-<script>
-    $(document).ready(function() {
-      $('.slider').bxSlider({
-          mode: 'fade',//horizontal, vertical, fade
-          auto: true,
-          pause: 2000
-      });
-    });
-</script>
-{% endblock %} 
+    <title>SciCat</title>
+    <script src="https://kit.fontawesome.com/43c554ce25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'app/css/inicio.css' %}">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<div class="body" id="body">
 
-{% block css %} 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-{% endblock %} 
+    <header id="header">
 
-{% block contenido %}
+        <div class="header-content">
+            <div class="menu" id="show-menu">
+                <i class="fas fa-bars"></i>
+                <h1>Menú</h1>
+            </div>
 
-<div class="slider">
-    <div>
-        <img src="{% static 'app/img/banner/banner1.png' %}" alt="">
-    </div>
-    <div>
-        <img src="{% static 'app/img/banner/banner2.png' %}" alt="">
-    </div>
-    <div>
-        <img src="{% static 'app/img/banner/banner3.png' %}" alt="">
-    </div>
-</div>
+            <div class="logo">
+                <img src="{% static 'app/img/Icono.png' %}" alt="">
+            </div>
 
-<h2>Contenido reciente</h2>
-<div class="productos">
+            <div class="buscador">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
 
-<div class="producto">
-
-    <div class="contenedor_producto">
-
-        <img src="{% static 'app/img/lenovo_tablet.jpeg' %}" alt="imagen producto">
-        <div class="detalle">
-            <h5>Lenovo</h5>
-            <h2>Tablet</h2>
-            <h3>$120.000</h3>
         </div>
 
+    </header>
+
+<div class="container-all" id="move-content">
+    <div class="background">
     </div>
+    <div class="container-cover">
+        <div class="container-cover-1">
+            <div class="texto">
+                <h1>Bienvenidos a</h1>
+            </div>
+            <img id="Scicat" src="{% static 'app/img/fondo01.png' %}" alt="">
+            <img id="Saha" src="{% static 'app/img/saha_cortada_2.png' %}" alt="">
+            <div class="comencemos">
+                <div class="cohete">
+                    <img id="Cohete" src="{% static 'app/img/cohete.png' %}" alt="">
+                </div>
+                <b>Comencemos</b>
+            </div>
+            <i class="fas fa-chevron-down"></i>
 
-</div>
-
-<div class="producto">
-
-    <div class="contenedor_producto">
-
-        <img src="{% static 'app/img/macbook.jpeg' %}" alt="imagen producto">
-        <div class="detalle">
-            <h5>apple</h5>
-            <h2>Macbook</h2>
-            <h3>$1.500.000</h3>
+        </div>
+        <img id="doppler" src="{% static 'app/img/Naranjo_cortado.png' %}" alt="">
+        <div class="container-cover-2">
+            <img id="logo-pag-2" src="{% static 'app/img/Icono.png' %}" alt="">
+            <div class="que-es-scicat">
+                ¿Qué es SciCat?
+            </div>
+            <div class="lo-que-somos">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="texto">
+                    <p>Somos un grupo de apoyo estudiantil</p>
+                    <p>creado por y para estudiantes que nace de</p>
+                    <p>la necesidad de bla bla</p>
+                </div>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fab fa-instagram icon-redes-top" id="fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-spotify icon-redes-top" id="fa-spotify"></i></a>
+                <a href="#"><i class="fab fa-discord icon-redes-top" id="fa-discord"></i></a>
+                <a href="#"><i class="fab fa-youtube icon-redes-top" id="fa-youtube"></i></a>
+            </div>
+            <img id="Cooper" class="Cooper" src="{% static 'app/img/Azul _cortado.png' %}" alt="">
         </div>
 
-    </div>
 
-</div>
-
-<div class="producto">
-
-    <div class="contenedor_producto">
-
-        <img src="{% static 'app/img/surface.jpeg' %}" alt="imagen producto">
-        <div class="detalle">
-            <h5>microsoft</h5>
-            <h2>Surface</h2>
-            <h3>$2.000.000</h3>
         </div>
-
     </div>
-
+    
+</div>
+<script src="{% static 'app/js/inicio.js' %}"></script>
 </div>
 
-<div class="producto">
-
-    <div class="contenedor_producto">
-
-        <img src="{% static 'app/img/s9.jpeg' %}" alt="imagen producto">
-        <div class="detalle">
-            <h5>samsung</h5>
-            <h2>Galaxy s9</h2>
-            <h3>$400.000</h3>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="producto">
-
-    <div class="contenedor_producto">
-
-        <img src="{% static 'app/img/redmi.jpeg' %}" alt="imagen producto">
-        <div class="detalle">
-            <h5>Xiaomi</h5>
-            <h2>Redmi note 8</h2>
-            <h3>$200.000</h3>
-        </div>
-
-    </div>
-
-</div>
-
-
-</div>
-
-
-{% endblock %}
+</html>
