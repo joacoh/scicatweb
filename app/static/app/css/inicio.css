@@ -7,6 +7,9 @@
     font-family: 'Source Sans Pro', sans-serif;
 
 }
+html {
+    scroll-behavior: smooth;
+  }
 header{
     position: fixed;
     transform: translateY(-160px);
@@ -240,7 +243,7 @@ header{
     font-size: 40px;
     box-shadow: 0 4px 25px -22px black;
 }
-#fa-instagram-square{
+#fa-instagram{
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
     <link rel="icon" type="Icono.ico" href="{% static 'app/img/Icono.ico' %}" size="32x32">
     <meta charset="UTF-8">
@@ -37,44 +37,49 @@
     <div class="background">
     </div>
     <div class="container-cover">
-        <div class="container-cover-1">
-            <div class="texto">
-                <h1>Bienvenidos a</h1>
-            </div>
-            <img id="Scicat" src="{% static 'app/img/fondo01.png' %}" alt="">
-            <img id="Saha" src="{% static 'app/img/saha_cortada_2.png' %}" alt="">
-            <div class="comencemos">
-                <div class="cohete">
-                    <img id="Cohete" src="{% static 'app/img/cohete.png' %}" alt="">
-                </div>
-                <b>Comencemos</b>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-
-        </div>
-        <img id="doppler" src="{% static 'app/img/Naranjo_cortado.png' %}" alt="">
-        <div class="container-cover-2">
-            <img id="logo-pag-2" src="{% static 'app/img/Icono.png' %}" alt="">
-            <div class="que-es-scicat">
-                ¿Qué es SciCat?
-            </div>
-            <div class="lo-que-somos">
-                <i class="fas fa-graduation-cap"></i>
+        <section id="sec1">
+            <div class="container-cover-1">
                 <div class="texto">
-                    <p>Somos un grupo de apoyo estudiantil</p>
-                    <p>creado por y para estudiantes que nace de</p>
-                    <p>la necesidad de bla bla</p>
+                    <h1>Bienvenidos a</h1>
                 </div>
+                <img id="Scicat" src="{% static 'app/img/fondo01.png' %}" alt="">
+                <img id="Saha" src="{% static 'app/img/saha_cortada_2.png' %}" alt="">
+                <a href="#sec2">
+                    <div class="comencemos">
+                        <div class="cohete">
+                            <img id="Cohete" src="{% static 'app/img/cohete.png' %}" alt="">
+                        </div>
+                        <b>Comencemos</b>
+                    </div>
+                </a>
+                <i class="fas fa-chevron-down"></i>
+        
             </div>
-            <div class="redes">
-                <a href="https://www.instagram.com/_scicat_/"><i class="fab fa-instagram icon-redes-top" id="fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-spotify icon-redes-top" id="fa-spotify"></i></a>
-                <a href="https://discord.gg/7EydENYY69"><i class="fab fa-discord icon-redes-top" id="fa-discord"></i></a>
-                <a href="https://www.youtube.com/channel/UC4y3QUrci4jNY9kQ2tiS67A"><i class="fab fa-youtube icon-redes-top" id="fa-youtube"></i></a>
+        <img id="doppler" src="{% static 'app/img/Naranjo_cortado.png' %}" alt="">
+        </section>
+        <section id="sec2">
+            <div class="container-cover-2">
+                <img id="logo-pag-2" src="{% static 'app/img/Icono.png' %}" alt="">
+                <div class="que-es-scicat">
+                    ¿Qué es SciCat?
+                </div>
+                <div class="lo-que-somos">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="texto">
+                        <p>Somos un grupo de apoyo estudiantil</p>
+                        <p>creado por y para estudiantes que nace de</p>
+                        <p>la necesidad de bla bla</p>
+                    </div>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/_scicat_/"><i class="fab fa-instagram icon-redes-top" id="fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-spotify icon-redes-top" id="fa-spotify"></i></a>
+                    <a href="https://discord.gg/7EydENYY69"><i class="fab fa-discord icon-redes-top" id="fa-discord"></i></a>
+                    <a href="https://www.youtube.com/channel/UC4y3QUrci4jNY9kQ2tiS67A"><i class="fab fa-youtube icon-redes-top" id="fa-youtube"></i></a>
+                </div>
+                <img id="Cooper" class="Cooper" src="{% static 'app/img/Azul _cortado.png' %}" alt="">
             </div>
-            <img id="Cooper" class="Cooper" src="{% static 'app/img/Azul _cortado.png' %}" alt="">
-        </div>
-
+        </section>
 
         </div>
     </div>
