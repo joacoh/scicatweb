@@ -334,6 +334,15 @@ header{
     opacity:37% ;
     z-index: 3;
 }
+
+
+
+
+
+
+
+
+
 .gatos #lazer{
     display: flex;
     position: absolute;
@@ -342,8 +351,7 @@ header{
     width: 350px;
     z-index: 4;
 }
-
-.gatos .imagenes{
+.gatos #imagenes{
     display: flex;
     position: absolute;
     flex-direction: row;
@@ -352,14 +360,14 @@ header{
     height: 70vh;
     bottom: 0px;
 }
-.gatos .imagenes img{
+.gatos #imagenes img{
     display: flex;
     margin: 20px;
     width: 300px;
     justify-content: space-between;
     position: relative;
 }
-.gatos .imagenes *{
+.gatos #imagenes *{
     justify-content: center;
     display: flex;
     align-self: center;
@@ -368,33 +376,24 @@ header{
 
     margin: 20px;
 }
-.gatos .imagenes  img{
+.gatos #imagenes  img{
     width: 300px;
     top: 0px;
     height: 370px;
 }
-.gatos .imagenes .cooper-circulo{
+.gatos #imagenes #circulo-1{
     z-index: 5;
     cursor: pointer;
 }
-.gatos .imagenes .doppler-circulo{
+.gatos #imagenes #circulo-2{
     z-index: 2;
     cursor: pointer;
 }
-.gatos .imagenes .saha-circulo{
+.gatos #imagenes #circulo-3{
     z-index: 2;
     cursor: pointer;
 }
-.gatos .imagenes .cooper-circulo:hover{
-    width: 350px;
-    height: 431.66666666666px;
-}
-
-.gatos .imagenes .saha-circulo:hover{
-    width: 350px;
-    height: 431.66666666666px;
-}
-.gatos .imagenes .doppler-circulo:hover{
+.gatos #imagenes #circulo-1:hover{
     width: 350px;
     height: 431.66666666666px;
 }
@@ -407,19 +406,98 @@ header{
     bottom: 15px;
     z-index: 6;
 }
-.gatos .fa-caret-left{
+.gatos i:hover{
+    cursor: pointer;
+    bottom:0px;
+    font-size: 120px;
+}
+.gatos #left-arrow{
     left:400px
 }
-.gatos .fa-caret-left:hover{
-    cursor: pointer;
-    bottom:0px;
-    font-size: 120px;
-}
-.gatos .fa-caret-right{
+
+.gatos #right-arrow{
     right:400px;
 }
-.gatos .fa-caret-right:hover{
+
+
+
+
+
+
+.gatos #lazer-extend{
+    display: flex;
+    position: absolute;
+    top:0px;
+    right:80px;
+    width: 350px;
+    z-index: 4;
+}
+.gatos #imagenes-extend{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    right: 0px;
+    height: 70vh;
+    bottom: 0px;
+}
+.gatos #imagenes-extend img{
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    justify-content: space-between;
+    position: relative;
+}
+.gatos #imagenes-extend *{
+    display: flex;
+    position: absolute;
+    margin: 20px;
+}
+.gatos #imagenes-extend #circulo-1-extend{
+    width: 300px;
+    height: 370px;
+    z-index: 5;
+    left: 80px;
     cursor: pointer;
-    bottom:0px;
-    font-size: 120px;
+}
+.gatos #imagenes-extend #circulo-2-extend{
+    width: 150px;
+    height: 185px;
+    z-index: 2;
+    top:-100px;
+    left: 0px;
+    cursor: pointer;
+}
+.gatos #imagenes-extend #circulo-3-extend{
+    width: 150px;
+    height: 185px;
+    z-index: 2;
+    top:-100px;
+    left:300px;
+    cursor: pointer;
+}
+.gatos #imagenes-extend #circulo-1-extend:hover{
+    left: 60px;
+    width: 350px;
+    height: 431.66666666666px;
+}
+
+.gatos #left-arrow-extend{
+    right:380px;
+}
+.gatos #right-arrow-extend{
+    right:100px;
+}
+
+
+.container-info #back{
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 59.8vw;
+    overflow: hidden;
+    top:200vh;
+    z-index: 7;
+    transform: translateX(-59.8vw);
 }
