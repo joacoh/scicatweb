@@ -74,6 +74,11 @@ header{
 /*Fin del Header*/
 
 /*Inicio Body*/
+.container-all{
+    width: 100%;
+    height: 700vh;
+    overflow: hidden;
+}
 .container-cover{
     width: 100%;
     height: 200vh;
@@ -86,8 +91,7 @@ header{
 .background{
     width: 100%;
     height: 100vh;
-    /*background-image: url(../img/Página\ SciCat.gif);*/
-    background-color: navy;
+    background-image: url(../img/background_temp.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -281,12 +285,141 @@ header{
     width: 30px;
     height: 20px;
 }
-.container-cover-2 .Cooper{
+.container-all .Cooper{
     display: flex;
     position: absolute;
     width: 350px;
-    bottom: -100px;
-    right: -30px;
+    top: 140vh;
+    right: 0px;
+}
+.container-info .gatos{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #B3D6EA;
+    z-index: 3;
+}
+.gatos .absolute-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:100px;
+    left: 40px;
+    z-index: 4;
+}
+.gatos .absolute-text:before{
+    content:'';
+    width:6px;
+    height: 100%;
+    position: absolute;
+    left: -30px;
+    background: #7A1D92;
+}
+.gatos .absolute-text p{
+    color: black;
+    font-size: 30px;
+}
+.gatos .absolute-text h1{
+    color: white;
+    font-size: 60px;
 }
 
+.gatos .gray{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity:37% ;
+    z-index: 3;
+}
+.gatos #lazer{
+    display: flex;
+    position: absolute;
+    top:0px;
+    left:480px;
+    width: 350px;
+    z-index: 4;
+}
 
+.gatos .imagenes{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    bottom: 0px;
+}
+.gatos .imagenes img{
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    justify-content: space-between;
+    position: relative;
+}
+.gatos .imagenes *{
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    width: 400px;
+    height: 500px;
+
+    margin: 20px;
+}
+.gatos .imagenes  img{
+    width: 300px;
+    top: 0px;
+    height: 370px;
+}
+.gatos .imagenes .cooper-circulo{
+    z-index: 5;
+    cursor: pointer;
+}
+.gatos .imagenes .doppler-circulo{
+    z-index: 2;
+    cursor: pointer;
+}
+.gatos .imagenes .saha-circulo{
+    z-index: 2;
+    cursor: pointer;
+}
+.gatos .imagenes .cooper-circulo:hover{
+    width: 350px;
+    height: 431.66666666666px;
+}
+
+.gatos .imagenes .saha-circulo:hover{
+    width: 350px;
+    height: 431.66666666666px;
+}
+.gatos .imagenes .doppler-circulo:hover{
+    width: 350px;
+    height: 431.66666666666px;
+}
+
+.gatos i{
+    display: flex;
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    bottom: 15px;
+    z-index: 6;
+}
+.gatos .fa-caret-left{
+    left:400px
+}
+.gatos .fa-caret-left:hover{
+    cursor: pointer;
+    bottom:0px;
+    font-size: 120px;
+}
+.gatos .fa-caret-right{
+    right:400px;
+}
+.gatos .fa-caret-right:hover{
+    cursor: pointer;
+    bottom:0px;
+    font-size: 120px;
+}
