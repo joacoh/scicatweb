@@ -34,7 +34,10 @@
     </header>
 
 <div class="container-all" id="move-content">
-    <div class="background">
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="{% static 'app/img/background_temp.png' %}" class="fullscreen-bg__video">
+            <source src="{% static 'app/img/background.mp4' %}" type="video/mp4">
+        </video>
     </div>
     <div class="container-cover">
         <section id="sec1">
@@ -77,11 +80,53 @@
                     <a href="https://discord.gg/7EydENYY69"><i class="fab fa-discord icon-redes-top" id="fa-discord"></i></a>
                     <a href="https://www.youtube.com/channel/UC4y3QUrci4jNY9kQ2tiS67A"><i class="fab fa-youtube icon-redes-top" id="fa-youtube"></i></a>
                 </div>
-                <img id="Cooper" class="Cooper" src="{% static 'app/img/Azul _cortado.png' %}" alt="">
+            
             </div>
-        </section>
+        </div>
+        <img id="Cooper" class="Cooper" src="{% static 'app/img/Azul _cortado2.png' %}" alt="">
+        <div class="container-info">
+            <div class="gatos">
+                <div class="absolute-text">
+                    <p>Conoce a nuestros</p>
+                    <h1>GATOS AYUDANTES</h1>
+                </div>
+                <img id="lazer" class="lazer" src="{% static 'app/img/lazer de luz.png' %}">
+                <div id="imagenes" class="imagenes">
+                    <div class="doppler">
+                        <img id="circulo-2" class="circulo-2" src="{% static 'app/img/Naranjo_circulo.png' %}">
+                    </div>
+                    <div class="cooper">
+                        <img id="circulo-1" class="circulo-1" src="{% static 'app/img/Azul_circulo.png' %}">
+                    </div>
+                    <div class="saha">
+                        <img id="circulo-3" class="circulo-3" src="{% static 'app/img/Rosa_circulo.png' %}">
+                    </div>
+                </div>
+                <i id="left-arrow" class="fas fa-caret-left"></i>
+                <i id="right-arrow" class="fas fa-caret-right"></i>
+                <div class="gray">
+
+                </div>
+            </div>
+            <div id="back" class="back">
+                <img id="Cooper-fondo" class="Cooper-fondo" src="{% static 'app/img/Cooper_fondo.png' %}">
+                <img id="Doppler-fondo" class="Doppler-fondo" src="{% static 'app/img/Doppler_fondo.png' %}">
+                <img id="Saha-fondo" class="Saha-fondo" src="{% static 'app/img/Saha_fondo.png' %}">
+            </div>
+            <div class="noticias">
+
+            </div>
+            <div class="articulos">
+
+            </div>
+            <div class="comunidad">
+
+            </div>
+        </div>
+        <div class="footer">
 
         </div>
+
     </div>
     
 </div>
