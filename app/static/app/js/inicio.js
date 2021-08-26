@@ -17,27 +17,27 @@ document.getElementById("left-arrow").addEventListener("click",izquierda)
 
 function izquierda(){
   if (displacement ==0){
-    document.getElementById(circulo1).src="img/Naranjo_circulo.png"
-    document.getElementById(circulo2).src="img/Rosa_circulo.png"
-    document.getElementById(circulo3).src="img/Azul_circulo.png"
+    document.getElementById(circulo1).src="static/app/img/Naranjo_circulo.png"
+    document.getElementById(circulo2).src="static/app/img/Rosa_circulo.png"
+    document.getElementById(circulo3).src="static/app/img/Azul_circulo.png"
     document.getElementById("Cooper-fondo").style.display='none'
     document.getElementById("Doppler-fondo").style.display='flex'
     document.getElementById("Saha-fondo").style.display='none'
     k=1
   }
   if (displacement ==1){
-    document.getElementById(circulo1).src="img/Rosa_circulo.png"
-    document.getElementById(circulo2).src="img/Azul_circulo.png"
-    document.getElementById(circulo3).src="img/Naranjo_circulo.png"
+    document.getElementById(circulo1).src="static/app/img/Rosa_circulo.png"
+    document.getElementById(circulo2).src="static/app/img/Azul_circulo.png"
+    document.getElementById(circulo3).src="static/app/img/Naranjo_circulo.png"
     document.getElementById("Cooper-fondo").style.display='none'
     document.getElementById("Doppler-fondo").style.display='none'
     document.getElementById("Saha-fondo").style.display='flex'
     k=2
   }
   if (displacement ==2){
-    document.getElementById(circulo1).src="img/Azul_circulo.png"
-    document.getElementById(circulo2).src="img/Naranjo_circulo.png"
-    document.getElementById(circulo3).src="img/Rosa_circulo.png"
+    document.getElementById(circulo1).src="static/app/img/Azul_circulo.png"
+    document.getElementById(circulo2).src="static/app/img/Naranjo_circulo.png"
+    document.getElementById(circulo3).src="static/app/img/Rosa_circulo.png"
     document.getElementById("Cooper-fondo").style.display='flex'
     document.getElementById("Doppler-fondo").style.display='none'
     document.getElementById("Saha-fondo").style.display='none'
@@ -51,27 +51,27 @@ document.getElementById("right-arrow").addEventListener("click",derecha)
 
 function derecha(){
   if (displacement ==2){
-    document.getElementById(circulo1).src="img/Naranjo_circulo.png"
-    document.getElementById(circulo2).src="img/Rosa_circulo.png"
-    document.getElementById(circulo3).src="img/Azul_circulo.png"
+    document.getElementById(circulo1).src="static/app/img/Naranjo_circulo.png"
+    document.getElementById(circulo2).src="static/app/img/Rosa_circulo.png"
+    document.getElementById(circulo3).src="static/app/img/Azul_circulo.png"
     document.getElementById("Cooper-fondo").style.display='none'
     document.getElementById("Doppler-fondo").style.display='flex'
     document.getElementById("Saha-fondo").style.display='none'
     k=1
   }
   if (displacement ==0){
-    document.getElementById(circulo1).src="img/Rosa_circulo.png"
-    document.getElementById(circulo2).src="img/Azul_circulo.png"
-    document.getElementById(circulo3).src="img/Naranjo_circulo.png"
+    document.getElementById(circulo1).src="static/app/img/Rosa_circulo.png"
+    document.getElementById(circulo2).src="static/app/img/Azul_circulo.png"
+    document.getElementById(circulo3).src="static/app/img/Naranjo_circulo.png"
     document.getElementById("Cooper-fondo").style.display='none'
     document.getElementById("Doppler-fondo").style.display='none'
     document.getElementById("Saha-fondo").style.display='flex'
     k=2
   }
   if (displacement ==1){
-    document.getElementById(circulo1).src="img/Azul_circulo.png"
-    document.getElementById(circulo2).src="img/Naranjo_circulo.png"
-    document.getElementById(circulo3).src="img/Rosa_circulo.png"
+    document.getElementById(circulo1).src="static/app/img/Azul_circulo.png"
+    document.getElementById(circulo2).src="static/app/img/Naranjo_circulo.png"
+    document.getElementById(circulo3).src="static/app/img/Rosa_circulo.png"
     document.getElementById("Cooper-fondo").style.display='flex'
     document.getElementById("Doppler-fondo").style.display='none'
     document.getElementById("Saha-fondo").style.display='none'
