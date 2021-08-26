@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="Icono.ico" href="{% static 'app/img/Icono.ico' %}" size="32x32">
+    <meta charset="UTF-8">
+
+    <title>SciCat</title>
+    <script src="https://kit.fontawesome.com/43c554ce25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'app/css/inicio_old.css' %}">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<div class="body" id="body">
+
+    <header id="header">
+
+        <div class="header-content">
+            <div class="menu" id="show-menu">
+                <i class="fas fa-bars"></i>
+                <h1>Menú</h1>
+            </div>
+
+            <div class="logo">
+                <img src="{% static 'app/img/Icono.png' %}" alt="">
+            </div>
+
+            <div class="buscador">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+
+        </div>
+
+    </header>
+
+<div class="container-all" id="move-content">
+    <div class="fullscreen-bg">
+        <video playsinline loop muted autoplay poster="{% static 'app/img/background_temp1.png' %}" class="fullscreen-bg__video">
+            <source src="{% static 'app/img/background2.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+    <div class="container-cover">
+        <section id="sec1">
+            <div class="container-cover-1">
+                <div class="texto">
+                    <h1>Bienvenidos a</h1>
+                </div>
+                <img id="Scicat" src="{% static 'app/img/fondo01.png' %}" alt="">
+                <img id="Saha" src="{% static 'app/img/saha_cortada_2.png' %}" alt="">
+                <a href="#sec2">
+                    <div class="comencemos">
+                        <div class="cohete">
+                            <img id="Cohete" src="{% static 'app/img/cohete.png' %}" alt="">
+                        </div>
+                        <b>Comencemos</b>
+                    </div>
+                </a>
+                <i class="fas fa-chevron-down"></i>
+        
+            </div>
+        <img id="doppler" src="{% static 'app/img/Naranjo_cortado.png' %}" alt="">
+        </section>
+        <section id="sec2">
+            <div class="container-cover-2">
+                <img id="logo-pag-2" src="{% static 'app/img/Icono.png' %}" alt="">
+                <div class="que-es-scicat">
+                    ¿Qué es SciCat?
+                </div>
+                <div class="lo-que-somos">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="texto">
+                        <p>Somos un grupo de apoyo estudiantil</p>
+                        <p>creado por y para estudiantes que nace de</p>
+                        <p>la necesidad de bla bla</p>
+                    </div>
+                </div>
+                <div class="redes">
+                    <a href="https://www.instagram.com/_scicat_/"><i class="fab fa-instagram icon-redes-top" id="fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-spotify icon-redes-top" id="fa-spotify"></i></a>
+                    <a href="https://discord.gg/7EydENYY69"><i class="fab fa-discord icon-redes-top" id="fa-discord"></i></a>
+                    <a href="https://www.youtube.com/channel/UC4y3QUrci4jNY9kQ2tiS67A"><i class="fab fa-youtube icon-redes-top" id="fa-youtube"></i></a>
+                </div>
+            
+            </div>
+        </div>
+        <img id="Cooper" class="Cooper" src="{% static 'app/img/Azul _cortado2.png' %}" alt="">
+        <div class="container-info">
+            <div class="gatos">
+                <div class="absolute-text">
+                    <p>Conoce a nuestros</p>
+                    <h1>GATOS AYUDANTES</h1>
+                </div>
+                <img id="lazer" class="lazer" src="{% static 'app/img/lazer de luz.png' %}">
+                <div id="imagenes" class="imagenes">
+                    <div class="doppler">
+                        <img id="circulo-2" class="circulo-2" src="{% static 'app/img/Naranjo_circulo.png' %}">
+                    </div>
+                    <div class="cooper">
+                        <img id="circulo-1" class="circulo-1" src="{% static 'app/img/Azul_circulo.png' %}">
+                    </div>
+                    <div class="saha">
+                        <img id="circulo-3" class="circulo-3" src="{% static 'app/img/Rosa_circulo.png' %}">
+                    </div>
+                </div>
+                <i id="left-arrow" class="fas fa-caret-left"></i>
+                <i id="right-arrow" class="fas fa-caret-right"></i>
+                <div class="gray">
+
+                </div>
+            </div>
+            <div id="back" class="back">
+                <img id="Cooper-fondo" class="Cooper-fondo" src="{% static 'app/img/Cooper_fondo.png' %}">
+                <img id="Doppler-fondo" class="Doppler-fondo" src="{% static 'app/img/Doppler_fondo.png' %}">
+                <img id="Saha-fondo" class="Saha-fondo" src="{% static 'app/img/Saha_fondo.png' %}">
+            </div>
+            <div class="noticias">
+
+            </div>
+            <div class="articulos">
+
+            </div>
+            <div class="comunidad">
+
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+
+    </div>
+    
+</div>
+<script src="{% static 'app/js/inicio_old.js' %}"></script>
+</div>
+
+</html>
