@@ -7,6 +7,9 @@
     font-family: 'Source Sans Pro', sans-serif;
 
 }
+html {
+    scroll-behavior: smooth;
+  }
 header{
     position: fixed;
     transform: translateY(-160px);
@@ -83,16 +86,24 @@ header{
     z-index:2;
     overflow: hidden;
 }
-.background{
-    width: 100%;
-    height: 100vh;
-    /*background-image: url(../img/Página\ SciCat.gif);*/
-    background-color: navy;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.fullscreen-bg {
+    color: black;
     position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
 
+.fullscreen-bg__video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .container-cover-1{
     z-index: 2;
@@ -240,7 +251,7 @@ header{
     font-size: 40px;
     box-shadow: 0 4px 25px -22px black;
 }
-#fa-instagram-square{
+#fa-instagram{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,12 +292,221 @@ header{
     width: 30px;
     height: 20px;
 }
-.container-cover-2 .Cooper{
+.container-all .Cooper{
     display: flex;
     position: absolute;
     width: 350px;
-    bottom: -100px;
-    right: -30px;
+    top: 140vh;
+    right: 0px;
+}
+.container-info .gatos{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #B3D6EA;
+    z-index: 3;
+}
+.gatos .absolute-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:100px;
+    left: 40px;
+    z-index: 4;
+}
+.gatos .absolute-text:before{
+    content:'';
+    width:6px;
+    height: 100%;
+    position: absolute;
+    left: -30px;
+    background: #7A1D92;
+}
+.gatos .absolute-text p{
+    color: black;
+    font-size: 30px;
+}
+.gatos .absolute-text h1{
+    color: white;
+    font-size: 60px;
+}
+
+.gatos .gray{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity:37% ;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+.gatos #lazer{
+    display: flex;
+    position: absolute;
+    top:0px;
+    left:480px;
+    width: 350px;
+    z-index: 4;
+}
+.gatos #imagenes{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    bottom: 0px;
+}
+.gatos #imagenes img{
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    justify-content: space-between;
+    position: relative;
+}
+.gatos #imagenes *{
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    width: 400px;
+    height: 500px;
+
+    margin: 20px;
+}
+.gatos #imagenes  img{
+    width: 300px;
+    top: 0px;
+    height: 370px;
+}
+.gatos #imagenes #circulo-1{
+    z-index: 5;
+    cursor: pointer;
+}
+.gatos #imagenes #circulo-2{
+    z-index: 2;
+    cursor: pointer;
+}
+.gatos #imagenes #circulo-3{
+    z-index: 2;
+    cursor: pointer;
+}
+.gatos #imagenes #circulo-1:hover{
+    width: 350px;
+    height: 431.66666666666px;
+}
+
+.gatos i{
+    display: flex;
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    bottom: 15px;
+    z-index: 6;
+}
+.gatos i:hover{
+    cursor: pointer;
+    bottom:0px;
+    font-size: 120px;
+}
+.gatos #left-arrow{
+    left:400px
+}
+
+.gatos #right-arrow{
+    right:400px;
+}
+
+
+
+
+
+
+.gatos #lazer-extend{
+    display: flex;
+    position: absolute;
+    top:0px;
+    right:80px;
+    width: 350px;
+    z-index: 4;
+}
+.gatos #imagenes-extend{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    right: 0px;
+    height: 70vh;
+    bottom: 0px;
+}
+.gatos #imagenes-extend img{
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    justify-content: space-between;
+    position: relative;
+}
+.gatos #imagenes-extend *{
+    display: flex;
+    position: absolute;
+    margin: 20px;
+}
+.gatos #imagenes-extend #circulo-1-extend{
+    width: 300px;
+    height: 370px;
+    z-index: 5;
+    left: 80px;
+    cursor: pointer;
+}
+.gatos #imagenes-extend #circulo-2-extend{
+    width: 150px;
+    height: 185px;
+    z-index: 2;
+    top:-100px;
+    left: 0px;
+    cursor: pointer;
+}
+.gatos #imagenes-extend #circulo-3-extend{
+    width: 150px;
+    height: 185px;
+    z-index: 2;
+    top:-100px;
+    left:300px;
+    cursor: pointer;
+}
+.gatos #imagenes-extend #circulo-1-extend:hover{
+    left: 60px;
+    width: 350px;
+    height: 431.66666666666px;
+}
+
+.gatos #left-arrow-extend{
+    right:380px;
+}
+.gatos #right-arrow-extend{
+    right:100px;
+}
+
+
+.container-info #back{
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 59.8vw;
+    overflow: hidden;
+    top:200vh;
+    z-index: 7;
+    transform: translateX(-59.8vw);
 }
 
 
