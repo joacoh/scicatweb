@@ -39,18 +39,6 @@
             <source src="{% static 'app/img/background2.mp4' %}" type="video/mp4">
         </video>
       </div>
-      <section id="sec1">
-         <div class="logoimg">
-            <img src="{% static 'app/img/Icono.JPG' %}" />
-            <div class="svg-wrapper">
-               <svg height="90" width="320" xmlns="http://www.w3.org/2000/svg">
-                 <rect class="shape" height="90" width="320" />
-                 <div class="title">SciCat</div>
-               </svg>
-             </div>
-         </div>
-      </section>
-      
       <script>
          const menuBtn = document.querySelector(".menu-icon span");
          const searchBtn = document.querySelector(".search-icon");
@@ -77,5 +65,28 @@
            cancelBtn.classList.add("show");
          }
       </script>
+      <div class="container1">
+         <section id="sec1">
+            <div class="logoimg">
+               <img src="{% static 'app/img/Icono.JPG' %}" />
+               <div class="svg-wrapper">
+                  <svg height="90" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="90" width="320" />
+                    <div class="title">SciCat</div>
+                  </svg>
+                </div>
+            </div>
+            <a href="#sec2">
+               <div class="scroll-down">
+                  <i class="fas fa-angle-down"></i>
+               </div>
+            </a>
+         </section>
+      </div>
+      <div class="container2">
+         <section id="sec2">
+            <h2>Hola</h2>
+         </section>
+      </div>
    </body>
 </html>
