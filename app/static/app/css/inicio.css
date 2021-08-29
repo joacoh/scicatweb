@@ -24,7 +24,34 @@ body::-webkit-scrollbar-thumb {
   background: #fc6a13;
 }
 
-/*NAV BAR*/
+/*BACK2TOP*/
+
+.b2t{
+  background-color: #fc6a13;
+  color: white;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+}
+.b2t:hover {
+  cursor: pointer;
+  background-color: #bb4e0f;
+}
+.b2t:active {
+  background-color: #fc6a13;
+}
+/*NAVBAR*/
 
 nav{
   background: #250a63;
@@ -60,9 +87,13 @@ nav .nav-items li a{
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
+  transition: color .3s
 }
 nav .nav-items li a:hover{
   color: #bb4e0f;
+}
+nav .nav-items li a:active{
+  color: #fc6a13;
 }
 nav form{
   display: flex;
@@ -91,9 +122,14 @@ nav form button{
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  transition: background .3s
 }
 nav form button:hover{
   background: #bb4e0f
+  ;
+}
+nav form button:active{
+  background: #fc6a13
   ;
 }
 nav .menu-icon,
@@ -180,7 +216,7 @@ nav .logo.space{
     left: 0;
 }
 
-/*SECCION 1*/
+/*SECTION 1*/
 
 .container1{
   z-index: 2;
@@ -202,11 +238,8 @@ nav .logo.space{
   margin: -350px 0 0 -225px;
   z-index: 0;
 }
-.logoimg:hover {
-	cursor: pointer;
-}
 .logoimg img {
-	filter: grayscale();
+	/*filter: grayscale();*/
 	max-width: 450px;
   width: 100%;
   height: auto;
@@ -214,11 +247,11 @@ nav .logo.space{
 	border: 6px solid whitesmoke;
 	box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
 	margin-bottom: 1rem;
-	transition: filter 0.4s ease-in-out;
+	/*transition: filter 0.4s ease-in-out;*/
 }
-.logoimg:hover img {
+/*.logoimg:hover img {
 	filter: none;
-}
+}*/
 .svg-wrapper {
   position: relative;
   top: 50%;
@@ -237,10 +270,11 @@ nav .logo.space{
 }
 .title {
   top: -98px;
-  left: 27px;
+  text-align: center;
   position: relative;
 	font-weight: 700;
 	font-size: 5rem;
+  cursor: default;
   color: #FFFFFF;
   text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 2px rgba(206,89,55,0);
 }
@@ -278,7 +312,7 @@ nav .logo.space{
   margin: 0px 0 0 0px
 }
 
-/*SECCION 2*/
+/*SECTION 2*/
 
 .container2 {
   position: relative;
@@ -394,6 +428,12 @@ nav .logo.space{
   }
   .logoimg img {
     max-width: 250px;
+  }
+  .b2t{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
   }
 }
 @media (max-width: 350px){
