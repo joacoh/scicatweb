@@ -239,16 +239,25 @@ nav .logo.space{
   margin: -290px 0 0 -200px;
   z-index: 0;
 }
-.logoimg img {
+.nopatch{
 	/*filter: grayscale();*/
 	max-width: 400px;
   width: 100%;
   height: auto;
 	border-radius: 50%;
-	border: 6px solid whitesmoke;
 	box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
 	margin-bottom: 1rem;
+  z-index: -1;
 	/*transition: filter 0.4s ease-in-out;*/
+}
+.patch{
+  position: absolute;
+	max-width: 400px;
+  width: 100%;
+  height: auto;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+  z-index: 1;
 }
 /*.logoimg:hover img {
 	filter: none;
@@ -262,6 +271,7 @@ nav .logo.space{
   left: 25%;
   width: 50%;
   transform: scale(2.8);
+  z-index: 0;
 }
 .title {
   top: -98px;
