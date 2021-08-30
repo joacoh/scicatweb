@@ -371,6 +371,7 @@ nav .logo.space{
     background: #3a5170;
     display: inline-block;
     transition: left 0.3s ease;
+    filter: opacity(95%);
   }
   nav .nav-items.active{
     left: 0px;
