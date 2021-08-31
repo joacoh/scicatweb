@@ -5,8 +5,8 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'app/home.html')
 
-def redes(request):
-    return render(request, 'app/redes.html')
+def podcat(request):
+    return render(request, 'app/podcat.html')
     
 def ramos(request):
     return render(request, 'app/ramos.html')

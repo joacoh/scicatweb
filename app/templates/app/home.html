@@ -20,7 +20,7 @@
          <div class="nav-items">
             <li><a href="">Inicio</a></li>
             <li><a href="{% url 'ramos' %}">Ramos</a></li>
-            <li><a href="{% url 'redes' %}">Redes</a></li>
+            <li><a href="{% url 'podcat' %}">PodCat</a></li>
             <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
          </div>
          <div class="search-icon">
@@ -40,7 +40,7 @@
         </video>
       </div>
       <a class="b2t" href="#"> <i class="fas fa-arrow-up"></i> </a>
-      <div class="container1">
+      <div class="welcome">
          <section id="sec1">
             <div class="logoimg">
                <svg viewBox="0 0 160 160" width="450" height="450">
@@ -62,7 +62,7 @@
             <div class="svg-wrapper">
                   <svg height="90" width="320" xmlns="http://www.w3.org/2000/svg">
                     <rect class="shape" height="90" width="320" />
-                    <div class="title">SciCat</div>
+                    <div class="welcometitle">SciCat</div>
                   </svg>
                </div>
             <a href="#sec2">
@@ -72,10 +72,15 @@
             </a>
          </section>
       </div>
-      <div class="container2">
-         <section id="sec2">
-            <h2>Hola</h2>
-         </section>
+      <div class="about">
+         <section id="sec2"></section>
+            <div class="aboutcontent">
+               <h1>Por y Para Estudiantes</h1>
+               <p class="abouttext">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore quo, eligendi veritatis qui aspernatur ullam beatae rerum veniam odit fuga ad praesentium, eum reiciendis reprehenderit libero vel in tenetur.
+               </p>
+            </div>
+         <img src="{% static 'app/img/cats.png' %}" class="cats"/>
       </div>
    </body>
 
