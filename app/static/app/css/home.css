@@ -182,6 +182,14 @@ transform: translateX(10px);
 .cats:hover {
 filter: none;
 }
+/* CLASS SECTION */
+
+.ramos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 
 /*MEDIA RESPONSIVE*/
 
@@ -197,7 +205,7 @@ filter: none;
     width: 90%;
     float: center;
     padding: 30px;
-    transform: translateY(40px);
+    transform: translateY(10px);
   }
   .aboutcontent h1{
     font-size: 3rem;
@@ -254,4 +262,3 @@ filter: none;
 @media (max-width: 350px){
 
 }
-
