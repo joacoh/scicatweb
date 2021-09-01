@@ -14,8 +14,5 @@ def ramos(request):
 def nosotros(request):
     return render(request, 'app/nosotros.html')
 
-def buscar(request):
-    return render(request, 'app/buscar.html')
 
-def old(request):
-    return render(request, 'app/home_old.html')
+

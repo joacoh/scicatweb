@@ -1,117 +1,62 @@
+{% extends 'app/base.html'%}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <link rel="icon" type="Icono.ico" href="{% static 'app/img/icono.ico' %}" size="32x32">
-      <meta charset="utf-8">
-      <title>SciCat v0.2</title>
-      <link rel="stylesheet" href="{% static 'app/css/inicio.css' %}">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
-   <body>
-      <nav>
-         <div class="menu-icon">
-            <span class="fas fa-bars"></span>
-         </div>
-         <div class="logo">
-            SciCat
-         </div>
-         <div class="nav-items">
-            <li><a href="">Inicio</a></li>
-            <li><a href="{% url 'ramos' %}">Ramos</a></li>
-            <li><a href="{% url 'podcat' %}">PodCat</a></li>
-            <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
-         </div>
-         <div class="search-icon">
-            <span class="fas fa-search"></span>
-         </div>
-         <div class="cancel-icon">
-            <span class="fas fa-times"></span>
-         </div>
-         <form action="{% url 'buscar' %}">
-            <input type="search" class="search-data" placeholder="Buscar" required>
-            <button type="submit" class="fas fa-search"></button>
-         </form>
-      </nav>
-      <div class="fullscreen-bg">
-        <video playsinline loop muted autoplay poster="{% static 'app/img/background.png' %}" class="fullscreen-bg__video">
-            <source src="{% static 'app/img/background.mp4' %}" type="video/mp4">
-        </video>
-      </div>
-      <a class="b2t" href="#"> <i class="fas fa-arrow-up"></i> </a>
-      <div class="welcome">
-         <section id="sec1">
-            <div class="logoimg">
-               <svg viewBox="0 0 160 160" width="450" height="450">
-                  <defs>
-                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                       <stop offset="0%" style="stop-color:rgb(4, 0, 255);stop-opacity:1" />
-                       <stop offset="100%" style="stop-color:rgb(253, 80, 0);stop-opacity:1" />
-                     </linearGradient>
-                   </defs>
-                  <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
-                    <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="url(#grad1)">
-                      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1s" repeatCount="indefinite" />
-                    </path>
-                  </g>
-               </svg>
-               <img src="{% static 'app/img/icono.png' %}" class="nopatch"/>
-               <img src="{% static 'app/img/patchicono.png' %}" class="patch"/>
-            </div>
-            <div class="svg-wrapper">
-                  <svg height="90" width="320" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="shape" height="90" width="320" />
-                    <div class="welcometitle">SciCat</div>
-                  </svg>
-               </div>
-            <a href="#sec2">
-               <div class="scroll-down">
-                  <i class="fas fa-angle-down"></i>
-               </div>
-            </a>
-         </section>
-      </div>
-      <div class="about">
-         <section id="sec2"></section>
-            <div class="aboutcontent">
-               <h1>Por y Para Estudiantes</h1>
-               <p class="abouttext">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore quo, eligendi veritatis qui aspernatur ullam beatae rerum veniam odit fuga ad praesentium, eum reiciendis reprehenderit libero vel in tenetur.
-               </p>
-            </div>
-         <img src="{% static 'app/img/cats.png' %}" class="cats"/>
-      </div>
-   </body>
 
-   <!-- ONLY SCRIPTS AND JS-->
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+{% endblock %}
 
-   <div>
-      <script>
-         const menuBtn = document.querySelector(".menu-icon span");
-         const searchBtn = document.querySelector(".search-icon");
-         const cancelBtn = document.querySelector(".cancel-icon");
-         const items = document.querySelector(".nav-items");
-         const form = document.querySelector("form");
-         menuBtn.onclick = ()=>{
-           items.classList.add("active");
-           menuBtn.classList.add("hide");
-           searchBtn.classList.add("hide");
-           cancelBtn.classList.add("show");
-         }
-         cancelBtn.onclick = ()=>{
-           items.classList.remove("active");
-           menuBtn.classList.remove("hide");
-           searchBtn.classList.remove("hide");
-           cancelBtn.classList.remove("show");
-           form.classList.remove("active");
-           cancelBtn.style.color = "#ff3d00";
-         }
-         searchBtn.onclick = ()=>{
-           form.classList.add("active");
-           searchBtn.classList.add("hide");
-           cancelBtn.classList.add("show");
-         }
-      </script>
-   </div>
-</html>
+{% block js %}
+
+{% endblock %}
+
+{% block contenido %}
+<div class="fullscreen-bg">
+   <video playsinline loop muted autoplay poster="{% static 'app/img/background.png' %}" class="fullscreen-bg__video">
+       <source src="{% static 'app/img/background.mp4' %}" type="video/mp4">
+   </video>
+ </div>
+<div class="welcome">
+   <section id="sec1">
+      <div class="logoimg">
+         <svg viewBox="0 0 160 160" width="450" height="450">
+            <defs>
+               <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                 <stop offset="0%" style="stop-color:rgb(4, 0, 255);stop-opacity:1" />
+                 <stop offset="100%" style="stop-color:rgb(253, 80, 0);stop-opacity:1" />
+               </linearGradient>
+             </defs>
+            <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+              <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="url(#grad1)">
+                <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1s" repeatCount="indefinite" />
+              </path>
+            </g>
+         </svg>
+         <img src="{% static 'app/img/icono.png' %}" class="nopatch"/>
+         <img src="{% static 'app/img/patchicono.png' %}" class="patch"/>
+      </div>
+      <div class="svg-wrapper">
+            <svg height="90" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape" height="90" width="320" />
+              <div class="welcometitle">SciCat</div>
+            </svg>
+         </div>
+      <a href="#sec2">
+         <div class="scroll-down">
+            <i class="fas fa-angle-down"></i>
+         </div>
+      </a>
+   </section>
+</div>
+<div class="about">
+   <section id="sec2"></section>
+      <div class="aboutcontent">
+         <h1>Por y Para Estudiantes</h1>
+         <p class="abouttext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore quo, eligendi veritatis qui aspernatur ullam beatae rerum veniam odit fuga ad praesentium, eum reiciendis reprehenderit libero vel in tenetur.
+         </p>
+      </div>
+   <img src="{% static 'app/img/cats.png' %}" class="cats"/>
+</div>
+
+{% endblock %}
