@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block css %}
-
+<link rel="stylesheet" href="{% static 'app/css/ramos.css' %}">
 {% endblock %}
 
 {% block js %}
@@ -12,4 +12,18 @@
 
 {% block contenido %}
 
+<div class="ramos">
+    <h1>Articulos - (<a href="{% url 'create' %}">Añadir</a>)</h1> 
+    <ul>
+        {% for post in object_list %}
+        <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - (<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)<br/>
+        <small>{{ post.category }}</small><br/>
+        {{ post.body|safe }}<br/>
+        </li>
+        {% endfor %}
+    </ul>
+    <br/>
+</div>
+
 {% endblock %}
+

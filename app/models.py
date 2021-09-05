@@ -9,14 +9,16 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
-    
+
 class Post(models.Model):
     title = models.CharField(max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = RichTextField(blank=True, null=True)
-    category = models.CharField(max_length=255, default='default')
+    category = models.CharField(max_length=255, default='')
     post_date = models.DateField(auto_now_add=True)
-    #body = models.TextField()
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('article-detail', args=(str(self.id)))

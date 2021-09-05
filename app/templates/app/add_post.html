@@ -1,0 +1,30 @@
+{% extends 'app/base.html'%}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/ramos.css' %}">
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="ramos">
+    <h1>Añadir Articulo</h1>
+
+    <table>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form.as_table }}
+    </table>
+    <button>Añadir</button>
+      
+    
+    </form>
+</div>
+
+{% endblock %}

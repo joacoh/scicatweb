@@ -1,0 +1,25 @@
+{% extends 'app/base.html'%}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/ramos.css' %}">
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="ramos">
+    <h1>{{ post.title }}</h1>
+    <small>{{ post.post_date }} - (<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)</small><br/>
+    <br/>
+    <hr>
+    <br/>
+
+    {{ post.body|safe }}
+</div>
+
+{% endblock %}

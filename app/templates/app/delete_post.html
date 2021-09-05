@@ -1,0 +1,29 @@
+{% extends 'app/base.html'%}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/ramos.css' %}">
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="ramos">
+    <h1>Eliminar Articulo</h1>
+
+    <br/>
+    <form method="POST">
+        {% csrf_token %}
+    <strong>¿Estas seguro?</strong><br/>
+    <small>Esta acción es irreversible</small><br/>
+    <button>Eliminar</button>
+      
+    
+    </form>
+</div>
+
+{% endblock %}
