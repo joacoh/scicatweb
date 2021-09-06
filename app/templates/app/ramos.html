@@ -26,7 +26,7 @@
 {% block contenido %}
 
 <div class="ramos">
-    <h1>Articulos - (<a href="{% url 'create' %}">Añadir</a>)</h1> 
+    <h1>Artículos Recientes - (<a href="{% url 'create' %}">Añadir</a>)</h1> 
     <ul>
         {% for post in object_list %}
         <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - (<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)<br/>
