@@ -13,6 +13,7 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    prev = RichTextField(blank=True, null=True, max_length=255)
     body = RichTextField(blank=True, null=True)
     category = models.CharField(max_length=255, default='')
     post_date = models.DateField(auto_now_add=True)

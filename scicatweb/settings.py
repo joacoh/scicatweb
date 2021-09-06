@@ -42,11 +42,19 @@ INSTALLED_APPS = [
     'members',
 ]
 
+LANGUAGES = [
+    ('es', ('Spanish')),
+]
+
+USE_I18N = True
+
 CKEDITOR_CONFIGS = {
     'default': {
         # Toolbar configuration
         # name - Toolbar name
         # items - The buttons enabled in the toolbar
+        'defaultLanguage' : 'es',
+        'lenguage' : 'es',
         'toolbar_DefaultToolbarConfig': [
             {
                 'name': 'basicstyles',
@@ -65,7 +73,7 @@ CKEDITOR_CONFIGS = {
             },
             {
                 'name': 'format',
-                'items': ['Format', ],
+                'items': ['Format', 'Scayt',],
             },
             {
                 'name': 'extra',
@@ -80,7 +88,8 @@ CKEDITOR_CONFIGS = {
 
         # This hides the default title provided by CKEditor
         'title': False,
-
+        'scayt_autoStartup' : True,
+        'scayt_sLang' : 'es_ES',
         # Use this toolbar
         'toolbar': 'DefaultToolbarConfig',
 
@@ -120,9 +129,12 @@ CKEDITOR_CONFIGS = {
             'image2',  # Loads new and better image dialog
             'embed',  # Used for embedding media (YouTube/Slideshare etc)
             'tableresize',  # Used to allow resizing of columns in tables
+            'scayt',
         ]),
     }
 }
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -132,6 +144,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'scicatweb.urls'

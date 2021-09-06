@@ -31,7 +31,7 @@
         {% for post in object_list %}
         <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - (<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)<br/>
         <small>{{ post.category }}</small><br/>
-        {{ post.body|safe }}<br/>
+        {{ post.prev|safe }}<br/>
         </li>
         {% endfor %}
     </ul>
