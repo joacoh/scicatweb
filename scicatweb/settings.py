@@ -78,7 +78,7 @@ CKEDITOR_CONFIGS = {
             {
                 'name': 'extra',
                 'items': ['Link', 'Unlink', 'Blockquote', 'Image', 'Table',
-                          'CodeSnippet', 'Mathjax', 'Embed', ],
+                          'CodeSnippet', 'Mathjax', 'Embed', 'Youtube',],
             },
             {
                 'name': 'source',
@@ -121,6 +121,18 @@ CKEDITOR_CONFIGS = {
         # Tab = 4 spaces inside the editor
         'tabSpaces': 4,
 
+        # Youtbue config
+
+        'youtube_width': '640',
+        'youtube_height': '480',
+        'youtube_responsive': 'true',
+        'youtube_related' : 'true',
+        'youtube_older' : 'false',
+        'youtube_privacy' : 'false',
+        'youtube_autoplay' : 'true',
+        'youtube_controls' : 'true',
+        'youtube_disabled_fields' : ['txtEmbed', 'chkAutoplay'],
+
         # Extra plugins to be used in the editor
         'extraPlugins': ','.join([
             # 'devtools',  # Shows a tooltip in dialog boxes for developers
@@ -130,6 +142,7 @@ CKEDITOR_CONFIGS = {
             'embed',  # Used for embedding media (YouTube/Slideshare etc)
             'tableresize',  # Used to allow resizing of columns in tables
             'scayt',
+            'youtube',
         ]),
     }
 }

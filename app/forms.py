@@ -11,7 +11,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'author', 'prev', 'body', 'category')
         widget = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
+            'category': forms.ChoiceField(choices=choice_list),
             'author': forms.Select(attrs={'class': 'form-control'}),
             'prev': forms.Textarea(attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
@@ -23,7 +23,7 @@ class EditForm(forms.ModelForm):
         fields = ('title','prev', 'body', 'category')
         widget = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
+            'category': forms.ChoiceField(choices=choice_list),
              #'author': forms.Select(attrs={'class': 'form-control'}),
             'prev': forms.Textarea(attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
