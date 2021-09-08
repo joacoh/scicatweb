@@ -24,7 +24,7 @@ En caso de faltar algún plugin en CKEditor, instalarlo individualmente o contac
 
 # Ejecutar
 
-Para ejecutar el proyecto, dirijirse a la carpeta del proyectto y ejecutar el siguiente comando:
+Para ejecutar el proyecto, dirijirse a la carpeta del proyecto y ejecutar el siguiente comando:
 
     #Native
     python3 manage.py runserver
