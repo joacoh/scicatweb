@@ -1,4 +1,4 @@
-# SciCat Web / Rama Joacoh
+# SciCat Web / Rama joacoh (dev)
 Repositorio para el desarrollo colaborativo de la página web de SciCat
 
 En esta rama estará todo lo que sea testeo del proyecto **COMPLETO**, con HTML, CSS, JS y PY listos para descargar, ejecutar y probar!
