@@ -19,11 +19,11 @@ class Category(models.Model):
         return reverse('ramos')
 
 class Post(models.Model):
-    title = models.CharField(max_length=255)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    prev = RichTextField(blank=True, null=True, max_length=255)
-    body = RichTextField(blank=True, null=True)
-    category = models.ForeignKey(Category, on_delete=None)
+    title = models.CharField(max_length=255, verbose_name='título')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='autor')
+    prev = RichTextField(blank=True, null=True, max_length=255, verbose_name='resumen')
+    body = RichTextField(blank=True, null=True, verbose_name='contenido')
+    category = models.ForeignKey(Category, on_delete=None, verbose_name='categoría')
     post_date = models.DateField(auto_now_add=True)
 
     def __str__(self):

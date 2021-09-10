@@ -26,10 +26,18 @@
 {% block contenido %}
 
 <div class="ramos">
-    <h1>Artículos Recientes - (<a href="{% url 'create' %}">Añadir</a>)</h1> 
+    <h1>Artículos Recientes</h1>
+    {% if user.is_authenticated %}
+    <a href="{% url 'create' %}">Añadir</a>
+    {% endif %}
+    </br>
     <ul>
         {% for post in object_list %}
-        <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - (<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)<br/>
+        <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a>
+        {% if user.is_authenticated %}
+             - (<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)
+        {% endif %}
+        <br/>
         <small>{{ post.category }}</small><br/>
         {{ post.prev|safe }}<br/>
         </li>

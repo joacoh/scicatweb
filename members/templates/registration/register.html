@@ -1,0 +1,29 @@
+{% extends 'app/base.html'%}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/acceso.css' %}">
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block contenido %}
+
+<div class="acceso">
+    <h1>Formulario de Registro</h1>
+
+    <table>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+    </table>
+    <button>Registrarse</button>
+      
+    
+    </form>
+</div>
+
+{% endblock %}

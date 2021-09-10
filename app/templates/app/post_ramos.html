@@ -27,9 +27,11 @@
 
 <div class="ramos">
     <h1>{{ post.title }}</h1>
-    <small>{{ post.post_date }} - (<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)</small><br/>
+    <small>{{ post.post_date }}</small>
+    {% if user.is_authenticated %}
+      <small>(<a href="{% url 'edit' post.pk %}">Editar</a> - <a href="{% url 'delete' post.pk %}">Eliminar</a>)</small>
+    {% endif %}
     <br/>
-    <hr>
     <br/>
 
     {{ post.body|safe }}

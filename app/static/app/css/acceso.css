@@ -1,0 +1,14 @@
+body {
+	background: #FFF;
+}
+.acceso{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    left: 50vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: stretch;
+    }

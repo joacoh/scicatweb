@@ -13,6 +13,8 @@
 
 {% block contenido %}
 
+{% if user.is_authenticated %}
+
 <div class="ramos">
     <h1>Añadir Articulo</h1>
 
@@ -27,5 +29,13 @@
     
     </form>
 </div>
+
+{% else %}
+
+<div class="ramos">
+    <h1>¡No tienes poder aquí!</h1>
+</div>
+
+{% endif %}
 
 {% endblock %}

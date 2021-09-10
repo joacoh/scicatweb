@@ -19,12 +19,23 @@
          <div class="logo">
             SciCat
          </div>
-         <div class="nav-items">
-            <li><a href="{% url 'home' %}">Inicio</a></li>
-            <li><a href="{% url 'ramos' %}">Ramos</a></li>
-            <li><a href="{% url 'podcat' %}">PodCat</a></li>
-            <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
-         </div>
+         {% if user.is_authenticated %}
+            <div class="nav-items">
+               <li><a href="{% url 'home' %}">Inicio</a></li>
+               <li><a href="{% url 'ramos' %}">Ramos</a></li>
+               <li><a href="{% url 'podcat' %}">PodCat</a></li>
+               <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+               <li><a href="{% url 'logout' %}">Desconectarse</a></li>
+            </div>
+         {% else %}
+            <div class="nav-items">
+               <li><a href="{% url 'home' %}">Inicio</a></li>
+               <li><a href="{% url 'ramos' %}">Ramos</a></li>
+               <li><a href="{% url 'podcat' %}">PodCat</a></li>
+               <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+               <li><a href="{% url 'login' %}">Ingresar</a></li>
+            </div>
+         {% endif %}
          <div class="search-icon">
             <span class="fas fa-search"></span>
          </div>

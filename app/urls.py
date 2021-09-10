@@ -8,6 +8,6 @@ urlpatterns = [
     path('nosotros/', nosotros, name='nosotros'),
     path('articulo/<int:pk>', PostDetailView.as_view(), name='article-detail'),
     path('create/', AddPostView.as_view(), name='create'),
-    path('articulo/<int:pk>/editar', EditPostView.as_view(), name='edit'),
-    path('articulo/<int:pk>/eliminar', DeletePostView.as_view(), name='delete')
+    path('articulo/<int:pk>/edit', EditPostView.as_view(), name='edit'),
+    path('articulo/<int:pk>/delete', DeletePostView.as_view(), name='delete')
 ]
