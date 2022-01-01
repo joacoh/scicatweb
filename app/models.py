@@ -5,7 +5,8 @@ from django.urls import reverse
 from datetime import datetime, date
 
 class Category(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, verbose_name='nombre')
+    desc = RichTextField(blank=True, null=True, verbose_name='descripción')
 
     class Meta:
         ordering = ('name', )

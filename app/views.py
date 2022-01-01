@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views. generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post
+from .models import Post, Category
 from .forms import PostForm, EditForm
 from django.urls import reverse_lazy
 
@@ -21,6 +21,7 @@ class PostView(ListView):
 class PostDetailView(DetailView):
     model = Post 
     template_name = 'app/post_ramos.html'
+    ordering = ['-name']
 
 class AddPostView(CreateView):
     model = Post
