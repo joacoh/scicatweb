@@ -3,6 +3,8 @@ Repositorio para el desarrollo colaborativo de la página web de SciCat
 
 En esta rama estará todo lo que sea testeo del proyecto **COMPLETO**, con HTML, CSS, JS y PY listos para descargar, ejecutar y probar!
 
+Recomiendo altamente utilizar esta versión como fork en futuras actualizaciones
+
 Para poder realizar una prueba se debe instalar **DJANGO 3.2.7** en el ambiente de desarrollo deseado (Native, Conda, etc).
 
     #Native
