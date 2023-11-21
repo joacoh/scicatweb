@@ -1,4 +1,4 @@
-# SciCat Web [LEGACY]
+# SciCat Web [DEPRECATED]
 Repositorio para el desarrollo colaborativo de la página web de SciCat
 
 En esta rama se encontraran las versiones estables del proyecto **COMPLETO**, con HTML, CSS, JS y PY listos para descargar, ejecutar y probar!
